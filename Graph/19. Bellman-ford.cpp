@@ -32,7 +32,7 @@ public:
         dist[S] = 0;
 
         /*
-        Since in a graph of N nodes, in worst case, you wilt
+        Since in a graph of N nodes, in worst case, you will
         take N—l edges to reach from the first to the last,
         thereby we iterate for N—l iterations.
         */
