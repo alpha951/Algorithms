@@ -48,6 +48,9 @@ class Solution
         }
     }
 
+    // optimized solution
+    // 65/65 tc passed
+
 public:
     int numDistinct(string s, string t)
     {
