@@ -36,7 +36,8 @@ int main()
         q.pop();
         for (auto child : adj[node])
         {
-            if (dist[node] + 1 < dist[child]) //! means the current child node is not vischilded yet (dist[child] = INT_MAX)
+            //! means the current child node is not vischilded yet (dist[child] = INT_MAX)
+            if (dist[node] + 1 < dist[child])
             {
                 dist[child] = dist[node] + 1;
                 q.push(child);
