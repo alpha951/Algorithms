@@ -9,7 +9,7 @@ int main()
 class Solution
 {
     /*
-        brute, groot  :-    bgruoote
+        brute  :-
         find LCS and add prefix, middle, suffix chars of both string which are not present in LCS in the same sequence as present in the original strings
 
         To solve such question create the dp table for small testcases and always initialize the dp array
