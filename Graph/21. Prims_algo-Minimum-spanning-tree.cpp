@@ -1,6 +1,6 @@
-// In Spanning tree there are N nodes and N-1 edges.
+//! In Spanning tree there are N nodes and N-1 edges.
 // each node is reachable by each other (not directly but via other nodes)
-// It's a greedy algorithm
+//! It's a greedy algorithm
 
 /*
 * Steps

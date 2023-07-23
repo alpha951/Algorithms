@@ -6,8 +6,8 @@ using namespace std;
 class Solution
 {
 public:
-    // Function to find the shortest distance of all the vertices
-    // from the source vertex S.
+    //? Function to find the  shortest distance of all the vertices
+    //* from the source vertex S.
     vector<int> dijkstra(int V, vector<vector<int>> adj[], int S)
     {
 

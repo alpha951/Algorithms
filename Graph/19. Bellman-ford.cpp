@@ -32,9 +32,9 @@ public:
         dist[S] = 0;
 
         /*
-        Since in a graph of N nodes, in worst case, you will
-        take N—l edges to reach from the first to the last,
-        thereby we iterate for N—l iterations.
+        Since in a graph of V nodes, in worst case, you will
+        take V—1 edges to reach from the first to the last,
+        thereby we iterate for V—1 iterations.
         */
         for (int i = 0; i < V - 1; i++)
         {
@@ -42,7 +42,9 @@ public:
             {
                 int u = child[0], v = child[1], w = child[2];
                 if (dist[u] + w < dist[v])
+                {
                     dist[v] = dist[u] + w;
+                }
             }
         }
 

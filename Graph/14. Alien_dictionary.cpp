@@ -13,6 +13,7 @@ public:
     {
         unordered_map<char, vector<char>> adj;
         unordered_map<char, int> ind;
+
         for (int i = 0; i < N - 1; i++)
         {
             int j = 0;

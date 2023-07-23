@@ -15,6 +15,8 @@
 
     - `indegree[child]--`  and if `indegree[child]` become zero push `child` node in to the queue.
 
+    - if after completing the loop indegree of any node is positive means cycle exist in the graph.
+
 */
 //{ Driver Code Starts
 #include <bits/stdc++.h>
