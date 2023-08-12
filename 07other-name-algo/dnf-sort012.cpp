@@ -2,6 +2,8 @@
 using namespace std;
 #define ll long long
 
+// sort array of 0, 1, 2 only
+
 class Solution
 {
 public:
@@ -34,3 +36,4 @@ int main()
 {
     return 0;
 }
+
