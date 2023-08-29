@@ -4,6 +4,10 @@
 
 using namespace std;
 
+/*
+    classes : Vehicle , Slot, Ticket, Lot
+*/
+
 class Vehicle
 {
 private:
@@ -35,7 +39,7 @@ class Slot
 private:
     int size;
     int id;
-    string status;
+    string status; // enums can be used ?
 
 public:
     Slot(int s, int id) : size(s), id(id), status("free") {}
@@ -155,7 +159,8 @@ public:
 int main()
 {
     Lot lot1;
-
+    // vehicle id is coming from manual input
+    // We can also add
     Vehicle v1(1, 100);
     Vehicle v2(2, 101);
     Vehicle v3(3, 102);
