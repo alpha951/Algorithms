@@ -1,6 +1,6 @@
 //! In Spanning tree there are N nodes and N-1 edges.
 // each node is reachable by each other (not directly but via other nodes)
-//! It's a greedy algorithm
+//* IMP: It's a greedy algorithm
 
 /*
 * Steps
@@ -8,7 +8,7 @@
 
 2. Start with 0th node and push
 (0,0,-1)
-explanation:  -1 means 0 is the genesis node
+explanation:  -1 means 0 is the genesis(root) node
 Mark 0 as visited
 
 3. Push all the neighbours of 0 in pq Do not mark them visited  (footnote 1)
@@ -36,7 +36,7 @@ public:
     int spanningTree(int V, vector<vector<int>> adj[])
     {
         vector<int> vis(V);
-        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> q;
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> q; // min-heap {weight, node}
 
         q.push({0, 1});
 
@@ -75,6 +75,7 @@ int main()
         cin >> V >> E;
         vector<vector<int>> adj[V];
         int i = 0;
+        // tree formation
         while (i++ < E)
         {
             int u, v, w;
