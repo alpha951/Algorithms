@@ -13,7 +13,7 @@ class Solution
 public:
     void nextPermutation(vector<int> &nums)
     {
-        // Step 1 : Find the rightmost index i for which nums[i]<nums[i+1]
+        // Step 1 : Find the rightmost index i for which nums[i] < nums[i+1]
         // Step 2 : find the next greater element to nums[i] in the right side at some index j
         // Step 3 : swap i and j indexed elements
         // Step 4 : reverse i to n part of the array
